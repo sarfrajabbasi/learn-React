@@ -1,11 +1,11 @@
 import React from 'react'
 // rfce
-function childComponent() {
+function ChildComponent(props) {
   return (
     <div>
-        <button>Greet Parent</button>
+        <button onClick={()=> props.greetHandler("child-1")}>Greet Parent</button>
     </div>
   )
 }
 
-export default childComponent
+export default ChildComponent

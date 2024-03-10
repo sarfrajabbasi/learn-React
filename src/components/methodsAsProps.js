@@ -1,7 +1,7 @@
 // if child component wanted to communicate with parent component,strangley we still use props.and passess a refer to a method as props to the chile component.
 // react snippet=rce
 import React, { Component } from 'react'
-import childComponent from './childComponent'
+import ChildComponent from './childComponent'
 
 class ParentComponent extends Component {
     // rconst
@@ -14,13 +14,13 @@ class ParentComponent extends Component {
       this.greetParent = this.greetParent.bind(this)
     }
 
-    greetParent(){
-        alert(`Hello ${this.state.parentName} fron`)
+    greetParent(childName){
+        alert(`Hello ${this.state.parentName} from ${childName}`)
     }
   render() {
     return (
       <div>
-<ChildComponent></ChildComponent>
+<ChildComponent greetHandler={this.greetParent}></ChildComponent>
       </div>
     )
   }
