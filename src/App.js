@@ -7,6 +7,7 @@ import Message from './components/message';
 import Counter from './components/setState'
 import FunctionClick, { ClassClick } from './components/eventHandling';
 import EventBind from './components/bindingEventHandlers';
+import ParentComponent from './components/methodsAsProps';
 function App() {
   return (
     <div className="App">
@@ -29,6 +30,7 @@ function App() {
      <FunctionClick></FunctionClick>
      <ClassClick></ClassClick> */}
      <EventBind></EventBind>
+     <ParentComponent></ParentComponent>
      
     </div>
   );
