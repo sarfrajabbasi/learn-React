@@ -8,6 +8,8 @@ import Counter from './components/setState'
 import FunctionClick, { ClassClick } from './components/eventHandling';
 import EventBind from './components/bindingEventHandlers';
 import ParentComponent from './components/methodsAsProps';
+import UserGreeting from './components/condtional_Rendering';
+import NameList from './components/list_rendering';
 function App() {
   return (
     <div className="App">
@@ -29,9 +31,10 @@ function App() {
      <Counter></Counter>
      <FunctionClick></FunctionClick>
      <ClassClick></ClassClick> */}
-     <EventBind></EventBind>
-     <ParentComponent></ParentComponent>
-     
+     {/* <EventBind></EventBind> */}
+     {/* <ParentComponent></ParentComponent> */}
+     <UserGreeting></UserGreeting>
+     <NameList></NameList>
     </div>
   );
 }
