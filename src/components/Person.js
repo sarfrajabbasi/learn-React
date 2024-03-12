@@ -12,8 +12,3 @@ function Person({person}) {
 export default Person
 
 
-/* 
-
-
-
-*/
