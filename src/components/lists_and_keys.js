@@ -3,12 +3,12 @@ import Person from "./Person";
 
 // display the list of item
 function NameListKey() {
-  //     const names = ['sarfraz','Clark','Diana'];
-  //     const nameList =names.map((name)=><h1>{name + ' 😎'}</h1>)
-  //     console.log('hello');
-  //   return (
-  //     <div>{nameList}</div>
-  //   )
+     /*  const names = ['sarfraz','Clark','Diana'];
+      const nameList =names.map((name)=><h1>{name + ' 😎'}</h1>)
+      console.log('hello');
+    return (
+      <div>{nameList}</div>
+    ) */
 
 /* Q. how react handle the update?
     Ans. react just iterate over the both the lists at the same time and generates the mutation whenever there is a difference.(insert if does'nt match).
@@ -46,10 +46,10 @@ function NameListKey() {
     },
   ];
   const PersonList = persons.map((person) => (
-    <Person person={person}></Person>
+    <Person key={person.id} person={person}></Person>
   ));
 
   return <div>{PersonList}</div>;
 }
 
-export default  NameListKey1
+export default  NameListKey

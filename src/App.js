@@ -11,6 +11,7 @@ import ParentComponent from './components/methodsAsProps';
 import UserGreeting from './components/condtional_Rendering';
 import NameList from './components/list_rendering';
 import NameListKey from './components/lists_and_keys';
+import MyList from './components/indeAsKeyAntiPattern'
 function App() {
   return (
     <div className="App">
@@ -34,9 +35,11 @@ function App() {
      <ClassClick></ClassClick> */}
      {/* <EventBind></EventBind> */}
      {/* <ParentComponent></ParentComponent> */}
-    //  <UserGreeting></UserGreeting>
-    //  <NameList></NameList>
-    //  <NameListKey></NameListKey>
+    {/* //  <UserGreeting></UserGreeting> */}
+    {/* //  <NameList></NameList> */}
+    {/* //  <NameListKey></NameListKey> */}
+    <MyList></MyList>
+    
     </div>
   );
 }
