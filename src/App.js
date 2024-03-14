@@ -12,6 +12,9 @@ import UserGreeting from './components/condtional_Rendering';
 import NameList from './components/list_rendering';
 import NameListKey from './components/lists_and_keys';
 import MyList from './components/indeAsKeyAntiPattern'
+import StyleSheet,{Inline} from './components/styleSheets';
+import './appStyle.css'
+import styles from './appStyle.module.css'
 function App() {
   return (
     <div className="App">
@@ -38,8 +41,13 @@ function App() {
     {/* //  <UserGreeting></UserGreeting> */}
     {/* //  <NameList></NameList> */}
     {/* //  <NameListKey></NameListKey> */}
-    <MyList></MyList>
+    {/* <MyList></MyList> */}
+    {/* <h1 className= {styles.error}>Error</h1> */}
+    {/* <h1 className= 'success'>success</h1> */}
+    {/* <Inline></Inline> */}
+    {/* <StyleSheet primary={true}></StyleSheet> */}
     
+
     </div>
   );
 }

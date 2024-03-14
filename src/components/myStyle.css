@@ -1,0 +1,19 @@
+.primary{
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    width: 30%;
+    height: 30%;
+    color: darkorange;
+    background-color: #333;
+    border-radius: 20%;
+    text-align: center;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.font-xl{
+    font-size: 2em;
+}
